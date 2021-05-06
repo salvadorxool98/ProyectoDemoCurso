@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+
+    /*background: #CED4DA;*/
+    background-image: linear-gradient(to bottom, #fbfbfb, #b6b6b6, #757575, #3b3b3b, #000000);
+
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+}
+.container > .header{
+    grid-column: 1 / -1;
+}
+.header{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    height: 150px;
+
+    
+}
+.icono-header img{
+    width: 150px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.icono-header{
+    display: grid;
+    align-content: center;
+    justify-content: start;
+}
+.menu{
+    display: grid;
+    align-content: center;
+    justify-content: end;
+    margin-right: 30px;
+}
+
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+}
+.menu a{
+    font: oblique bold 120% cursive;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #000;
+}
+.menu  a:hover{
+    font-weight: bold;
+    transform:scale(1.2) ;
+    /*
+    color: rgba(8, 29, 99, 0.884);*/
+    color: #af050a;
+}
+
+/*Parte del LOgin------------------------------------------------------*/
+
+.container > .main{
+    grid-column: 1 /-1;
+}
+.main{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 700px;
+    
+}
+
+
+.login{
+    display: grid;
+    grid-template-rows: repeat(6, 1fr) ;
+    border-radius: 30px;
+    background-color: #343A40;
+	top: calc(50% - 75px);
+	left: calc(50% - 50px);
+	height: 400px;
+	width: 270px;
+	padding: 10px;
+    justify-content: center;
+}
+
+.login input[type=text]{
+	width: 250px;
+	height: 40px;
+	background: transparent;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 10px;
+	color: #fff;
+	font: oblique bold 110% cursive;
+	padding: 4px;
+    grid-row: 2;
+}
+
+.login input[type=password]{
+	width: 250px;
+	height: 40px;
+	background: transparent;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 10px;
+	color: #fff;
+	font: oblique bold 110% cursive;
+	padding: 4px;
+	margin-top: 10px;
+}
+
+.login input[type=button]{
+	width: 260px;
+	height: 40px;
+	background: #fff;
+	border: 1px solid #fff;
+	cursor: pointer;
+	border-radius: 10px;
+	color: #000000;
+	font: oblique bold 110% cursive;
+	padding: 6px;
+	margin-top: 10px;
+}
+
+.login input[type=button]:hover{
+	opacity: 0.8;
+}
+
+.login input[type=button]:active{
+	opacity: 0.6;
+}
+
+.login input[type=text]:focus{
+	outline: none;
+	border: 1px solid rgba(255,255,255,0.9);
+}
+
+.login input[type=password]:focus{
+	outline: none;
+	border: 1px solid rgba(255,255,255,0.9);
+}
+
+.login input[type=button]:focus{
+	outline: none;
+}
+
+::-webkit-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+
+::-moz-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+
+/*Footerr---------------------------------------------------*/
+
+.container > .footer{
+    grid-column: 1 /-1;
+}
+.footer{
+    display: grid;
+    justify-content: end;
+    align-content: center;
+    height: 119px;
+}
+.footer-sencillo ul li{
+    display: inline-block;
+    list-style: none;
+}
+.footer-sencillo a{
+    text-decoration: none;
+    font: oblique bold 120% cursive;
+    padding: 15px 20px;
+    margin-right: 20px;
+    color: #fff;
+}
+
+  
