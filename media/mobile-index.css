@@ -1,0 +1,17 @@
+@media (max-width:600px){
+
+   .login__container{
+       background-color: transparent;
+       border: none;
+       padding: 0px;
+       width: 100%;
+   }
+   .footer{
+       justify-content: start;
+   }
+   .footer ul li {
+       display: block;
+   }
+
+    
+}
