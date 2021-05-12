@@ -1,17 +1,27 @@
-@media (max-width:600px){
-
-   .login__container{
-       background-color: transparent;
-       border: none;
-       padding: 0px;
-       width: 100%;
-   }
-   .footer{
-       justify-content: start;
-   }
-   .footer ul li {
-       display: block;
-   }
-
+@media (max-width:600px){ 
+    .main{
+        height: 200px;
+    }
+    .carousel {
+    overflow: scroll;
+    width: 100%;
+    position: relative;
     
-}
+  }
+  .carousel__container {
+    margin: 60px 0px;
+    display: flex;
+  }
+  .carousel-item {
+    display: inline-block;
+
+  }
+    .footer {
+        align-items: flex-start;
+        height: 100px;
+        justify-content: center;
+        flex-direction: column;
+      }
+     
+ }
+ 
